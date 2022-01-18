@@ -33,3 +33,4 @@
 .quick-menu ul li a { display: flex; 
   justify-content: center; padding-top: 27px;}
 .quick-menu ul li:first-of-type { border-left:none;}
+.event-list li { float: left; width: 296px; height: 132px; }
