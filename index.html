@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/reset.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
   <title>e북포털 북큐브</title>
 
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  
+  <script src="js/topslider.js"></script>
+  <script src="js/best_top7.js"></script>
 </head>
 <body>
   <header>
@@ -34,7 +38,7 @@
           </ul>
           <ul class="right-m1">
             <li>캐시충전</li>
-            <il>고객센터</il>
+            <li>고객센터</li>
           </ul>
         </div>
       </div>
@@ -43,7 +47,7 @@
     <div class="header-bottom">
       <div class="container">
         <ul class="left-m2">
-          <li>전체 카테고리</li>
+          <li><img src="img/all-category.png" alt="" class="all-category">전체 카테고리</li>
           <li>일반도서</li>
           <li>로맨스</li>
           <li>BL</li>
@@ -124,7 +128,7 @@
     <div class="container">
       <div class="best-title">
         <h2>일반 베스트</h2>
-        <span>전체 더보기</span>
+        <a href="#" class="more-view">전체 더보기</a>
       </div>
       <div class="best-wrap">
         <div class="best-top7">
@@ -133,13 +137,15 @@
             <a href="#" class="more-view">더보기</a>
           </div>
           <ul class="best-list">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="top7-1" id="num1">
+              <div class="num1-box"></div>
+            </li>
+            <li class="top7-1"></li>
+            <li class="top7-1"></li>
+            <li class="top7-1"></li>
+            <li class="top7-1"></li>
+            <li class="top7-1"></li>
+            <li class="top7-1"></li>
           </ul>
         </div>
         <div class="best-top7">
@@ -148,13 +154,15 @@
             <a href="#" class="more-view">더보기</a>
           </div>
           <ul class="best-list">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="top7-2" id="num1">
+              <div class="num1-box"></div>
+            </li>
+            <li class="top7-2"></li>
+            <li class="top7-2"></li>
+            <li class="top7-2"></li>
+            <li class="top7-2"></li>
+            <li class="top7-2"></li>
+            <li class="top7-2"></li>
           </ul>
         </div>
         <div class="best-top7">
@@ -162,7 +170,7 @@
             <h2>자기계발 TOP7</h2>
             <a href="#" class="more-view">더보기</a>
           </div>
-          <ul class="best-list">
+          <ul class="best-list top7-3">
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
