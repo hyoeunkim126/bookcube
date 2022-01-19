@@ -1,16 +1,37 @@
 @charset "UTF-8";
-.container { width: 910px; height: 100%; margin: 0 auto; border: 1px solid red;}
+.container { width: 950px; height: 100%; margin: 0 auto; border: 1px solid red;}
+/* 더보기 */
+.more-view  { font-size: 14px; font-weight: 600; 
+  padding-right: 15px; color: #727272; 
+  background: url('../img/more.png') no-repeat right center;}
 
-
-
-.header-top { width: 100%; height: 140px; background-color: rgb(245, 245, 245);}
-.header-top .container { padding-top: 33px;}
-.logo a>div { width: 150px; height: 50px;
+.left-m1, .left-m2, .right-m1, .right-m2, .t-bottom, .header-bottom .container{ 
+  display: flex; align-items: center; }
+  .t-bottom, .header-bottom .container {justify-content: space-between;}
+ /* header top */
+.header-top { width: 100%; height: 140px; }
+.header-top .t-top { display: flex; padding-top: 33px; }
+.logo { width: 170px; height: 45px; margin-left: 40px;}
+.logo a>div { width: 150px; height: 45px;
               background: url('../img/bookcube_logo.png') no-repeat;
               background-size: contain; background-position: left;} 
+.search { width: 380px; height: 45px; 
+          border-radius: 40px; border: 2px solid #f26532; }
+.search input[type='text'] { width: 300px; height: 40px; 
+                              border: none; margin-left: 20px;}   
+.search input[type='search'] { width: 25px; height: 25px;
+  border: none; cursor: pointer;
+  background: url('../img/search-btn.png') no-repeat center center;}
+.login-menu { display: flex; width: 300px; height: 45px; }
+.login-menu li:first-child { height: 40px; margin-left: 20px;
+  background: url('../img/logout.png') no-repeat center center;}
+.login-menu li:last-child { height: 40px; margin-left: 20px;
+  background: url('../img/my.png') no-repeat center center;}
+.login-menu li a { color: #b4b4b4; padding-top: 20px;}
 
+/* header bottom */
 .header-bottom { width: 100%; height: 50px; background-color: rgb(243, 242, 230);}
-.today-hot { width: 100%; height: 400px; background-color: ghostwhite;}
+.today-hot { width: 100%; height: 400px; background-color: #f4f4f4;}
 .today-hot .container { width: 100%; text-align: center;}
 .hot-title { padding-top: 24px;
              font-size: 24px;
@@ -24,7 +45,7 @@
 
 .quick-menu { width:910px; height: 100px;
               margin: 0 auto; border:1px solid #eee; 
-              box-shadow: 1px 1px 4px rgb(175, 175, 175) ;
+              box-shadow: 1px 1px 4px #f4f4f4 ;
               border-radius: 5px;
               margin-top: 50px;}
 .quick-menu ul { height: 100%; display: flex; 
@@ -33,4 +54,44 @@
 .quick-menu ul li a { display: flex; 
   justify-content: center; padding-top: 27px;}
 .quick-menu ul li:first-of-type { border-left:none;}
+
+/* 이벤트 */
+.event { margin-top: 50px;}
+.list-wrap { overflow: hidden;}
+.event-list { width: 5700px; height: 132px; }
 .event-list li { float: left; width: 296px; height: 132px; }
+.event-title { display: flex; justify-content: space-between;
+              align-items: center; }
+.event-title h1 { display: inline;}
+
+
+/* 카테고리별 베스트 */
+.category-best .container { height: 100px; 
+  margin-top: 50px; background-color: #f4f4f4;}
+
+/* best top7 */
+.best-book { height: auto; margin-top: 50px; }
+.best-title { text-align: center;}
+.best-wrap { display: flex; justify-content: space-between;
+margin-top: 20px; }
+.best-top7 { width: 282px;  background-color: #f4f4f4; }
+.top7-title { height: 50px; display: flex; 
+  justify-content: space-between; align-items: center;}
+.top7-title h2 { float: left; }
+.top7-title span { float: right; padding-top: 5px; }
+.best-list li { height: 125px;  
+border-top: 1px solid #333;}
+.best-list li a { display: block; width: 100px; height: 125px; 
+  background-color: #f26532;}
+
+
+  /* 신간 */
+  .newbook { height: auto; margin-top: 50px;}
+  .newbook-title { display: flex; justify-content: space-between;
+                  align-items: center; border-bottom: 2px solid #b4b4b4; 
+                  padding-bottom: 10px;}
+  .newbook-list { display: flex; flex-flow: row wrap; 
+  margin-top: 20px;}
+  .newbook-list li { width: 18%; height: 250px; 
+                    margin: 8px; box-sizing: border-box;
+                     background-color: bisque;}
