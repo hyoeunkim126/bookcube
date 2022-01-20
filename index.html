@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>e북포털 북큐브</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -12,7 +14,15 @@
   
   <script src="js/topslider.js"></script>
   <script src="js/best_top7.js"></script>
+  <script src="js/newbook.js"></script>
+  <script src="js/essaybook.js"></script>
+  <script src="js/freebook.js"></script>
+  <script src="js/slider_ani.js"></script>
+  <script src="js/banner_ani.js"></script>
+
 </head>
+
+
 <body>
   <header>
     <div class="header-top">
@@ -64,6 +74,8 @@
       
     </div>
   </header>
+
+  <!--  오늘의  추천  -->
   <div class="today-hot">
     <div class="container">
       <h3 class="hot-title">오늘의 추천</h3>
@@ -85,10 +97,15 @@
         <li class="today-hot-box"></li>
         <li class="today-hot-box"></li>
         <li class="today-hot-box"></li>
-      </ul>
-
+      </ul> 
+    </div>
+    <div class="inner">
+      <span class="prev"><ion-icon name="chevron-back-outline" ></ion-icon></span>
+      <span class="next"><ion-icon name="chevron-forward-outline"></ion-icon></span>
     </div>
   </div> 
+
+  <!--  퀵 메 뉴  -->
   <div class="quick-menu">
     <ul>
       <li class="icon-menu"><a href="#"><img src="img/q-general-01.png"></a></li>
@@ -97,34 +114,50 @@
       <li class="icon-menu"><a href="#"><img src="img/q-general-04.png"></a></li>
     </ul>
   </div>
-      
-  <div class="event">
-    <div class="container">
+
+  <!--  이 벤 트  -->
+  <div class="main event">
+    <div class="container eventwrap">
       <div class="event-title">
         <h1>이벤트</h1>
         <a href="#" class="more-view">더보기</a>
       </div>
       <div class="list-wrap">
         <ul class="event-list">
-          <li class=""><a href="#"><img src="img/e16366_pc_banner.jpg"></a></li>
-          <li class=""><a href="#"><img src="img/e18745_pc_banner.jpg"></a></li>
-          <li class=""><a href="#"><img src="img/e18837_pc_banner.jpg"></a></li>
-          <li class=""><a href="#"><img src="img/e18870_pc_banner.jpg"></a></li>
-          <li class=""><a href="#"><img src="img/e4600_pc_banner.jpg"></a></li>
-          <li class=""><a href="#"><img src="img/e5060_pc_banner.jpg"></a></li>
-          <li class=""><a href="#"><img src="img/e7652_pc_banner.jpg"></a></li>
-          <li class=""><a href="#"><img src="img/e8957_pc_banner.jpg"></a></li>
+          <li><img src="img/e16366_pc_banner.jpg"></li>
+          <li><img src="img/e18745_pc_banner.jpg"></li>
+          <li><img src="img/e18837_pc_banner.jpg"></li>
+          <li><img src="img/e18870_pc_banner.jpg"></li>
+          <li><img src="img/e4600_pc_banner.jpg"></li>
+          <li><img src="img/e5060_pc_banner.jpg"></li>
+          <li><img src="img/e7652_pc_banner.jpg"></li>
+          <li><img src="img/e8957_pc_banner.jpg"></li>
         </ul>
       </div>
-      
+
+      <span class="e-prev"><ion-icon name="chevron-back-outline" ></ion-icon></span>
+      <span class="e-next"><ion-icon name="chevron-forward-outline"></ion-icon></span>
     </div> 
   </div>
-  <div class="category-best">
-    <div class="container">
 
+  <!--  카테고리별 베스트 -->
+  <div class="main category-best">
+    <div class="container">
+      <h3>카테고리별 베스트</h3>
+      <ul class="category-list">
+        <li><a href="#">문학</a></li>
+        <li><a href="#">경제/경영</a></li>
+        <li><a href="#">자기계발</a></li>
+        <li><a href="#">인문</a></li>
+        <li><a href="#">사회</a></li>
+        <li><a href="#">여행</a></li>
+
+      </ul>
     </div>
   </div>
-  <div class="best-book">
+  
+  <!-- 일반 베스트 -->
+  <div class="main best-book">
     <div class="container">
       <div class="best-title">
         <h2>일반 베스트</h2>
@@ -137,15 +170,17 @@
             <a href="#" class="more-view">더보기</a>
           </div>
           <ul class="best-list">
-            <li class="top7-1" id="num1">
-              <div class="num1-box"></div>
+            <li class="top7" id="num1">
+              <div class="num1-box top1-box">
+                <div class="info"></div>
+              </div>
             </li>
-            <li class="top7-1"></li>
-            <li class="top7-1"></li>
-            <li class="top7-1"></li>
-            <li class="top7-1"></li>
-            <li class="top7-1"></li>
-            <li class="top7-1"></li>
+            <li class="top7-1" id="top7"></li>
+            <li class="top7-1" id="top7"></li>
+            <li class="top7-1" id="top7"></li>
+            <li class="top7-1" id="top7"></li>
+            <li class="top7-1" id="top7"></li>
+            <li class="top7-1" id="top7"></li>
           </ul>
         </div>
         <div class="best-top7">
@@ -154,15 +189,17 @@
             <a href="#" class="more-view">더보기</a>
           </div>
           <ul class="best-list">
-            <li class="top7-2" id="num1">
-              <div class="num1-box"></div>
+            <li class="top7" id="num2">
+              <div class="num2-box top1-box">
+                <div class="info"></div>
+              </div>
             </li>
-            <li class="top7-2"></li>
-            <li class="top7-2"></li>
-            <li class="top7-2"></li>
-            <li class="top7-2"></li>
-            <li class="top7-2"></li>
-            <li class="top7-2"></li>
+            <li class="top7-2" id="top7"></li>
+            <li class="top7-2" id="top7"></li>
+            <li class="top7-2" id="top7"></li>
+            <li class="top7-2" id="top7"></li>
+            <li class="top7-2" id="top7"></li>
+            <li class="top7-2" id="top7"></li>
           </ul>
         </div>
         <div class="best-top7">
@@ -170,14 +207,18 @@
             <h2>자기계발 TOP7</h2>
             <a href="#" class="more-view">더보기</a>
           </div>
-          <ul class="best-list top7-3">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          <ul class="best-list">
+            <li class="top7" id="num3">
+              <div class="num3-box top1-box">
+                <div class="info"></div>
+              </div>
+            </li>
+            <li class="top7-3" id="top7"></li>
+            <li class="top7-3" id="top7"></li>
+            <li class="top7-3" id="top7"></li>
+            <li class="top7-3" id="top7"></li>
+            <li class="top7-3" id="top7"></li>
+            <li class="top7-3" id="top7"></li>
           </ul>
         </div>
       </div>
@@ -185,31 +226,158 @@
   </div>  
 
   <!-- 신간 -->
-  <div class="newbook">
+  <div class="main newbook">
     <div class="container">
       <div class="newbook-title">
         <h2>신간</h2>
         <a href="#" class="more-view">더보기</a>
       </div>
-      <ul class="newbook-list">
-        <li>
-          <div></div>
-          <div></div>
-        </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="newbook-wrap">
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
+        <li class="nb-list"></li>
       </ul>
       
     </div>
     
   </div>
+
+  <!--  중간 배너 -->
+  <div class="main banner">
+    <div class="container">
+      <div class="list-wrap">
+        <ul class="banner-list">
+          <li><img src="img/e4600_pc_banner.jpg"></li>
+          <li><img src="img/e5060_pc_banner.jpg"></li>
+          <li><img src="img/e7652_pc_banner.jpg"></li>
+          <li><img src="img/e8957_pc_banner.jpg"></li>
+          <li><img src="img/e16366_pc_banner.jpg"></li>
+          <li><img src="img/e18745_pc_banner.jpg"></li>
+          <li><img src="img/e18837_pc_banner.jpg"></li>
+          <li><img src="img/e18870_pc_banner.jpg"></li>
+        </ul>
+      </div>
+
+      <span class="e-prev"><ion-icon name="chevron-back-outline" ></ion-icon></span>
+      <span class="e-next"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+    </div> 
+  </div>
+
+  <!--  조금 외로운 당신에게 권하는 에세이 -->
+  <div class="main essay">
+    <div class="container">
+      <div class="essay-title">
+        <h2>조금 외로운 당신에게 권하는 에세이</h2>
+      </div>
+      <ul class="essay-wrap">
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--  책으로 읽는 옷소매 붉은 끝동 -->
+  <div class="main essay">
+    <div class="container">
+      <div class="essay-title">
+        <h2>책으로 읽는 옷소매 붉은 끝동</h2>
+      </div>
+      <ul class="essay-wrap">
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+        <li class="es-list"></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!--  무료 -->
+  <div class="main freebook">
+    <div class="container">
+      <div class="free-title">
+        <h2>무료</h2>
+        <a href="#" class="more-view">더보기</a>
+      </div>
+      <ul class="free-wrap">
+        <li class="free-list"></li>
+        <li class="free-list"></li>
+        <li class="free-list"></li>
+        <li class="free-list"></li>
+        <li class="free-list"></li>
+      </ul>
+    </div>
+  </div>
+
   
+  <!--  테마관  -->
+  <div class="main thema-hall">
+    <div class="container">
+      <div class="hall-title">
+        <h2>테마관</h2>
+        <a href="#" class="more-view">더보기</a>
+      </div>
+      <div class="themalist-wrap">
+        <ul class="h-list">
+          <li><img src="img/e16600_pc_banner.jpg"></li>
+          <li><img src="img/e12754_pc_banner.jpg"></li>
+          <li><img src="img/e12142_pc_banner.jpg"></li>
+        </ul>
+      </div>
+      
+    </div> 
+  </div>
+
+  <!--  브랜드관  -->
+  <div class="main brand-hall">
+    <div class="container">
+      <div class="hall-title">
+        <h2>브랜드관</h2>
+        <a href="#" class="more-view">더보기</a>
+      </div>
+      <div class="brandlist-wrap">
+        <ul class="h-list">
+          <li><img src="img/e9772_pc_banner.jpg"></li>
+          <li><img src="img/e12842_pc_banner.jpg"></li>
+          <li><img src="img/e7937_pc_banner.jpg"></li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+
+  <!--  공지 사항  -->
+  <div class="main notice-wrap">
+    <div class="container">
+      <p>공지사항</p>
+      <div>
+        <p>북큐브 서버 정기점검 작업 공지 (01/25(화) 04:00~05:00)<span>2022-01-20</span></p> 
+      </div>
+    </div>
+    
+  </div>
+
+  <!--  고객센터 -->
+  <div class="customer-wrap">
+    <div class="container">
+      <p>고객센터</p>
+    </div>
+    
+  </div>
+
+  <footer>
+
+
+  </footer>
 </body>
 </html>
