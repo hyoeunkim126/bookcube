@@ -3,8 +3,8 @@
 .container { width: 950px; height: 100%; margin: 0 auto; }
 /* 더보기 */
 .more-view  { font-size: 14px; font-weight: 600; 
-  padding-right: 35px; color: #727272; 
-  background: url('../img/more.png') no-repeat 50px center;}
+  padding-right: 10px; color: #727272; 
+  background: url('../img/more.png') no-repeat right center;}
 
 .main { height: auto; margin-top: 50px; }
 
@@ -60,6 +60,22 @@
 .right-m2 li { font-family: 'pretendard-bold'; color: #333; font-weight: bold ;
               font-size: 15px; line-height: 12px; padding-right: 15px;}
 
+/* 카테고리 모달팝업 */
+#all-category-popup { display: none; 
+  width: 100%; height: 100%; 
+  position: fixed; top: 50%; transform: translateY(-50%);
+   z-index: 9999;}
+.pop { width: 950px; height: 50%; 
+          background: #fff; border: 2px solid #e67951; 
+          box-shadow: 1px 1px 10px #a3a3a3;}
+.s-menu { display: flex;}
+
+#all-category-popup .close{ padding:30px; right: 0;
+          color:rgb(0, 0, 0); 
+          font-size: 3em;
+          font-family:verdana;
+          font-weight: lighter;
+          cursor: pointer;}
 
 
 /* 오늘의 추천 */
@@ -260,11 +276,66 @@ margin-top: 20px; }
 .notice-wrap { width: 100%; height: 50px; 
               border-top: 1px solid #e7e7e7;
               border-bottom: 1px solid #e7e7e7;}
-.notice-wrap .container { display: flex;}
+.notice-wrap .container { display: flex; align-items: center;}
+
+.n-title { width: 10%; font-size: 12px; font-weight: bold;}
+.n-list { width: 80%; display: flex; 
+          justify-content: space-between;}
+.n-list p, span { font-size: 13px; color: #a3a3a3;}
 
 /* 고객센터 */
-.customer-wrap { height: 150px;}
+.cs-wrap { height: 150px;}
+.cs-wrap .container { display: flex; align-items: center; }
+.cs-wrap .container div { height: 100px; margin-right: 20px;}
+.cs p { margin-top: 10px;}
+.cs p:nth-of-type(1) {font-size: 20px; font-weight: bold;}
+.cs p:nth-of-type(2) {font-size: 12px; color: #a3a3a3; letter-spacing: -1px;}
+.cs span { width: 50px; font-size: 12px; font-weight: lighter; 
+           padding: 2px 5px; margin-right: 10px;
+           border: 1px solid #a3a3a3;}
+
+.service p, .short-cut p{ float: left; width: 60px; height: 60px;  
+                          font-size: 12px; letter-spacing: -1px;
+                          margin-right: 10px; padding-top: 50px;}
+.service p:nth-child(1) { 
+        background: url('../img/f-library.svg') no-repeat center 12px;}
+.service p:nth-child(2) { 
+        background: url('../img/f-download.svg') no-repeat center 12px;}
+.short-cut p:nth-child(1) { 
+        background: url('../img/f-coupon.svg') no-repeat center 8px;}
+.short-cut p:nth-child(2) { 
+        background: url('../img/f-remote.svg') no-repeat center 12px;}
+.short-cut p:nth-child(3) { 
+        background: url('../img/f-bookcash.svg') no-repeat center 12px;}
+.short-cut p:nth-child(4) { 
+        background: url('../img/f-mypage.svg') no-repeat center 8px;}
+
+/* 푸터 */
+footer { height: 300px; background-color: #f6f6f6;}
+.footer-top, .f-bottom  { display: flex; align-items: center; 
+  padding-top: 30px;}
+.footer-top li { font-size: 12px; line-height: 12px; 
+  padding:0 15px 0 10px; border-left: 1px solid #929292;}
+.footer-top li:nth-child(1) { border :none; }
+
+.f-bottom li { margin-right: 10px; }
+.f-bottom li:nth-child(4) { width: 150px; height: 40px; 
+  border:1px solid #929292; padding: 4px 0; background: #fff;
+  border-radius: 50px; text-align: center; 
+  font-size: 14px; line-height: 30px;}
+
+.address { font-size: 12px; color: #929292; 
+  width: 800px; padding-top: 20px; }
+.address ul li { float: left; padding: 0 10px;
+  line-height: 20px; background: url('../img/lnb-dot.gif') no-repeat center right;  }
+.address ul li:last-child { background: none;}
+.copy-text { clear: both; font-size: 12px; 
+  padding-top: 40px; color: #929292; display: flex;
+  align-items: center;}
 
 
-/* 고객센터 */
-footer { height: 280px; background-color: #eee;}
+  .top-btn a{ width: 40px; height: 40px;
+    border:1px solid #929292; position: fixed;
+    bottom: 15px; left: 1250px;
+    padding: 10px; border-radius: 7px;
+    background: url('../img/topBtn.png')no-repeat center center;}
