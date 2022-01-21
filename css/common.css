@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+.container { width: 950px; height: 100%; margin: 0 auto; }
+
+
+ /* header top */
+ .header-top { width: 100%; height: 140px; }
+ .header-top .t-top { display: flex; padding-top: 33px; }
+ .logo { width: 170px; height: 45px; margin-left: 100px;}
+ .logo a>div { width: 150px; height: 45px;
+               background: url('../img/bookcube_logo.png') no-repeat;
+               background-size: contain; background-position: left;} 
+ .search { width: 380px; height: 45px; 
+           border-radius: 40px; border: 2px solid #f26532; }
+ .search input[type='text'] { width: 300px; height: 40px; 
+                               border: none; margin-left: 20px;}   
+ .search input[type='search'] { width: 25px; height: 25px;
+   border: none; cursor: pointer;
+   background: url('../img/search-btn.png') no-repeat center center;}
+ .login-menu { display: flex; width: 300px; height: 45px;
+               }
+ .login-menu li:first-child { height: 40px; margin-left: 20px; 
+   padding-top: 30px; 
+   background: url('../img/logout.png') no-repeat center center;}
+ .login-menu li:last-child { height: 40px; margin-left: 20px;
+   padding-top: 30px;
+   background: url('../img/my.png') no-repeat center center;}
+ .login-menu li a { color: #b4b4b4; font-size: 14px; }
+ 
+ /* 메뉴 공통 */
+ .left-m1, .left-m2, .right-m1, .right-m2, .t-bottom, .header-bottom .container{ 
+   display: flex; align-items: flex-start; }
+ .t-bottom, .header-bottom .container {justify-content: space-between;}
+ 
+ .t-bottom { padding-top: 30px;}
+ .left-m1 { width: 320px; text-align: center;}
+ .left-m1 li { width: 90px; font-size: 18px; padding-bottom: 5px; 
+               font-family: 'pretendard-bold'; font-weight: bold ;
+               color: #727272;}
+ .left-m1 li:first-child { border-bottom: 4px solid #f26532; color: #f26532;}
+ .right-m1 li { font-family: 'pretendard-bold'; color: #727272; 
+               font-size: 14px; line-height: 12px; padding-right: 10px;}
+ .right-m1 li:last-child { border-left: 1px solid #b4b4b4;
+                           padding-left: 10px;  }
+ 
+ 
+ /* header bottom */
+ .header-bottom { width: 100%; height: 45px; 
+   border-top: 1.5px solid #e7e7e7; 
+   border-bottom: 1.5px solid #e7e7e7; padding-top: 12px;}
+ 
+ .left-m2 { width: 470px;  }
+ .all-category, .left-m2:first-child { cursor: pointer;}  
+ .left-m2 li { font-family: 'pretendard-bold'; font-weight: bold ;
+               color: #929292; margin-right: 15px;}                        
+ .right-m2 li { font-family: 'pretendard-bold'; color: #333; font-weight: bold ;
+               font-size: 15px; line-height: 12px; padding-right: 15px;}
+ .header-bottom .container { position: relative;}
+ 
+ /* 카테고리 모달팝업 */
+ #all-category-popup { display: none; position: absolute;
+                       width: 100%; height: 100%; 
+                       z-index: 9999;}
+ .pop { width: 950px; height: 350px; margin: 0 auto;
+       background: #fff; border: 2px solid #e67951;
+       border-radius: 3px; 
+       box-shadow: 1px 1px 10px #a3a3a3; position: relative; }
+ .pop div { padding: 30px;}
+ .pop div:first-child { height: 120px; border-bottom: 1px solid #dadada;}
+ /* .s-menu { display: flex; flex-flow: row ;} */
+ .s-menu li { width: 20%; font-size: 14px; color: #333;
+              float: left; margin-top: 10px;}
+ .pop-title { font-size: 18px; font-weight: bold; color: #e67951;}
+ 
+ #all-category-popup .close{ padding:30px; 
+   position: absolute;  right: 10px; top:10px;
+ background: url(../img/category-close.png) no-repeat center center;}
+ 
