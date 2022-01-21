@@ -54,42 +54,45 @@
   border-top: 1.5px solid #e7e7e7; padding-top: 12px;}
 
 .left-m2 { width: 470px;  }
-.all-category { cursor: pointer;}  
+.all-category, .left-m2:first-child { cursor: pointer;}  
 .left-m2 li { font-family: 'pretendard-bold'; font-weight: bold ;
               color: #929292; margin-right: 15px;}                        
 .right-m2 li { font-family: 'pretendard-bold'; color: #333; font-weight: bold ;
               font-size: 15px; line-height: 12px; padding-right: 15px;}
+.header-bottom .container { position: relative;}
 
 /* 카테고리 모달팝업 */
-#all-category-popup { display: none; 
-  width: 100%; height: 100%; 
-  position: fixed; top: 50%; transform: translateY(-50%);
-   z-index: 9999;}
-.pop { width: 950px; height: 50%; 
-          background: #fff; border: 2px solid #e67951; 
-          box-shadow: 1px 1px 10px #a3a3a3;}
-.s-menu { display: flex;}
+#all-category-popup { display: none; position: absolute;
+                      width: 100%; height: 100%; 
+                      z-index: 9999;}
+.pop { width: 950px; height: 350px; margin: 0 auto;
+      background: #fff; border: 2px solid #e67951;
+      border-radius: 3px; 
+      box-shadow: 1px 1px 10px #a3a3a3; position: relative; }
+.pop div { padding: 30px;}
+.pop div:first-child { height: 120px; border-bottom: 1px solid #dadada;}
+/* .s-menu { display: flex; flex-flow: row ;} */
+.s-menu li { width: 20%; font-size: 14px; color: #333;
+             float: left; margin-top: 10px;}
+.pop-title { font-size: 18px; font-weight: bold; color: #e67951;}
 
-#all-category-popup .close{ padding:30px; right: 0;
-          color:rgb(0, 0, 0); 
-          font-size: 3em;
-          font-family:verdana;
-          font-weight: lighter;
-          cursor: pointer;}
+#all-category-popup .close{ padding:30px; 
+  position: absolute;  right: 10px; top:10px;
+background: url(../img/category-close.png) no-repeat center center;}
 
 
 /* 오늘의 추천 */
 .today-hot { width: 100%; height: 400px; background-color: #f4f4f4;
-              border-top: 1px solid #ccc; position: relative;}
-.today-hot .container { width: 100%; position: relative; 
+              border-top: 1px solid #ccc; position: relative; }
+.today-hot .container { width: 100%; position: absolute; top: 0; left: 0;
                         text-align: center; 
                         overflow: hidden;}
 .hot-title { padding-top: 24px;
              font-size: 24px;
              color: #333;
              font-weight: 600;}
-.top-slider { width: 3060px; height: auto; 
-              position: absolute; top: 60px; left: -1332px; }
+.top-slider { width: 3060px; height: auto; margin: 0 auto;
+              position: relative; top: 0;}
 .top-slider li { float: left; width: 150px; 
                  margin: 15px;  box-sizing: border-box; }
 .today-hot-box img { width: 100%; border-radius: 8px; 
@@ -100,15 +103,15 @@
                     font-size: 15px; padding-top: 10px;}
 .today-hot-box p { padding-top: 10px; font-size: 12px;
                    color: #727272;}
-.inner { width: 950px; margin: 0 auto; position: absolute; 
-top: 40%; left: 50%; transform: translate(-50%,-50%);}                  
-.inner span { position: absolute; top: 0;
-              width: 50px; height: 50px; 
+.inner { width: 950px; margin: 0 auto; position: absolute; top: 40%;
+         left: 50%; transform: translateX(-50%); }                  
+.inner span { width: 50px; height: 50px; 
               color: #fff;
               background-color: rgba(0, 0, 0, 0.5);
               border-radius: 50%; text-align: center;
               font-size: 35px; 
               line-height: 55px;
+              position: absolute; top: 50%;
               text-align: center;}
 .prev { left: 0px; cursor: pointer;}
 .next { right: 0px; cursor: pointer;}
