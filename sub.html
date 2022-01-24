@@ -108,5 +108,79 @@
       <!-- 전체 카테고리 모달 팝업 end -->
     </div>
   </header>
+  <div>
+    <div class="category-inner">
+      <div class="container">
+        <p>HOME > <a href="#">문학</a> > <a href="#">에세이/산문</a></p>
+      </div>
+    </div>
+  </div>
+  <div style="border: 1px solid #eee;"></div>
+  <div class="content-wrap">
+    <div class="container">
+      <div class="sub-title">
+
+      </div>
+      <div>
+        <p>
+          <span>지이</span>저
+        </p>
+        <p>
+          <span>마인드빌딩</span>
+          출판<em>|</em>2020.03.18
+        </p>
+      </table>
+        <tbody>
+          <tr>
+            <th>전자책 정가</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>구매</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>출간정보</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>소득공제 정보</th>
+            <td></td>
+          </tr>
+        </tbody>
+    </div>
+
+  </div>
+  <div id="intro-box"></div>
+
+  <script>
+     $.ajax({
+              method: "GET",
+              url: "https://dapi.kakao.com/v3/search/book?target=title",
+              data: { query: "진짜 게으른 사람이 쓴 게으름 탈출법" },
+              headers: { Authorization: "KakaoAK 4a0aae40607d76e7c911ecd56083360e" }
+            })
+              .done(function (msg) {
+                console.log(msg.documents[1].title);
+                console.log(msg.documents[1].thumbnail);
+
+                $(".sub-title").append("<h2>" + msg.documents[0].title + "</h2>");
+                $(".sub-title").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+                $(".contextbox").append("<h6>" + msg.documents[0].authors[0] + "</h6>");
+                $(".pricenum").append(msg.documents[0].price + "원");
+
+                var str = msg.documents[0].contents;
+                var str2 = str.substring(0, 600);
+
+                $(".contextbox").append("<p>" + str2 + "</p>");
+                $(".contextbox").append("<span>" + "자세히 보기" + "</span>");
+              })
+
+            $(function () {
+              $.get("./sub_txt/txt1.txt", function (data) {
+                $("#intro-box").html(data);
+              })
+            });
+  </script>
 </body>
 </html>
