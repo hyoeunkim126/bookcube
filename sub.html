@@ -69,7 +69,7 @@
           <div>
             <p class="pop-title">장르도서</p>
             <ul class="s-menu">
-              <li>로맨스</li>
+              <li><a href="sub.html">로맨스</a></li>
               <li>BL</li>
               <li>무협/판타지</li>
               <li>만화</li>
@@ -121,37 +121,55 @@
       <div class="sub-title">
 
       </div>
-      <div>
-        <p>
-          <span>지이</span>저
-        </p>
-        <p>
-          <span>마인드빌딩</span>
-          출판<em>|</em>2020.03.18
-        </p>
-      </table>
-        <tbody>
-          <tr>
-            <th>전자책 정가</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>구매</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>출간정보</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>소득공제 정보</th>
-            <td></td>
-          </tr>
-        </tbody>
+      <div class="book-info">
+        <div class="left-thum">
+
+        </div>
+        <div class="right-info">
+          <p><span class="authors"></span>저</p>
+          <p><span>마인드빌딩</span>
+            출판<em>|</em>2020.03.18</p>
+
+          <table>
+            <tbody>
+              <tr>
+                <th>전자책 정가</th>
+                <td class="pricenum" ></td>
+              </tr>
+              <tr>
+                <th>구매</th>
+                <td class="pricenum"></td>
+              </tr>
+              <tr>
+                <th>출간정보</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th>소득공제 정보</th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      
+      
+        
     </div>
 
   </div>
-  <div id="intro-box"></div>
+  <div >
+    <ul class="detail-navi" >
+      <li>책소개</li>
+      <li>목차</li>
+      <li>저자소개</li>
+      <li>서평</li>
+    </ul>
+  </div>
+  <div id="intro-box">
+
+  </div>
 
   <script>
      $.ajax({
@@ -165,8 +183,8 @@
                 console.log(msg.documents[1].thumbnail);
 
                 $(".sub-title").append("<h2>" + msg.documents[0].title + "</h2>");
-                $(".sub-title").append("<img src='" + msg.documents[0].thumbnail + "'/>");
-                $(".contextbox").append("<h6>" + msg.documents[0].authors[0] + "</h6>");
+                $(".left-thum").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+                $(".authors").append("<h4>" + msg.documents[0].authors[0] + "</h4>");
                 $(".pricenum").append(msg.documents[0].price + "원");
 
                 var str = msg.documents[0].contents;
