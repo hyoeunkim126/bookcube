@@ -115,22 +115,31 @@
       </div>
     </div>
   </div>
-  <div style="border: 1px solid #eee;"></div>
+  
+
   <div class="content-wrap">
     <div class="container">
       <div class="sub-title">
 
       </div>
+    </div>
+    <div class="top-line"></div>
+
+    <div class="container">
       <div class="book-info">
         <div class="left-thum">
 
         </div>
         <div class="right-info">
-          <p><span class="authors"></span>저</p>
+          <p><span class="authors"></span> 저</p>
           <p><span>마인드빌딩</span>
-            출판<em>|</em>2020.03.18</p>
-
-          <table>
+            출판 <em>|</em> 2020.03.18</p>
+          <div class="rank">
+            <p><span>10.0(1명)</span></p>
+            <p>서평(0)</p>
+            <p>공유하기</p>
+          </div>
+          <table class="info-box">
             <tbody>
               <tr>
                 <th>전자책 정가</th>
@@ -142,30 +151,40 @@
               </tr>
               <tr>
                 <th>출간정보</th>
-                <td></td>
+                <td>2021.10.21 | EPUB | 20.26MB</td>
               </tr>
               <tr>
                 <th>소득공제 정보</th>
-                <td></td>
+                <td>가능 (대여는 제외)  </td>
               </tr>
+
             </tbody>
           </table>
+          <div class="device">
+            <p>지원 단말기 : IOS 11.0 이상, Android 4.1 이상, PC Window 7 OS 이상 지원</p>
+            <p>듣기(TTS) 지원(모바일에서만 이용 가능)</p>
+          </div>
+          <div class="btn">
+              <a href="#" class="basket"><span></span></a>
+              <a href="#" class="gift"><span></span></a>
+              <a href="#" class="bookbuy"><span>구매</span></a>
+            </td>
+          </div>
         </div>
       </div>
-      
-      
-      
-        
     </div>
-
+      
   </div>
-  <div >
-    <ul class="detail-navi" >
-      <li>책소개</li>
-      <li>목차</li>
-      <li>저자소개</li>
-      <li>서평</li>
-    </ul>
+  <div class="detail-navi">
+    <div class="container">
+      <ul class="navi-box">
+        <li>책소개</li>
+        <li>목차</li>
+        <li>저자소개</li>
+        <li>서평</li>
+      </ul>
+    </div>
+    
   </div>
   <div id="intro-box">
 
@@ -184,6 +203,7 @@
 
                 $(".sub-title").append("<h2>" + msg.documents[0].title + "</h2>");
                 $(".left-thum").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+                $(".left-thum").append("<button>미리보기</button>");
                 $(".authors").append("<h4>" + msg.documents[0].authors[0] + "</h4>");
                 $(".pricenum").append(msg.documents[0].price + "원");
 

@@ -2,23 +2,62 @@
 
 .category-inner { height: 40px; 
     background-color: #eee;
-    line-height: 35px; border-top: 0.5px solid #929292;}
+    line-height: 38px; border-top: 0.5px solid #929292;}
 .category-inner p { font-size: 14px; padding-left: 18px;
                     color: #929292;}
+.top-line { border-top: 1px solid #eee;}
 .sub-title { padding: 18px;}
-.sub-title h2{ font-size: 32px; font-weight: normal;
-               padding-bottom: 18px; }
+.sub-title h2{ font-size: 32px; font-weight: normal; }
 .book-info { display: flex; flex-direction: row;
-            justify-content: space-between;}
+            justify-content: space-between;
+            margin-top: 30px;}
+.left-thum { display: flex; flex-direction: column; align-items: center;}
 .left-thum img { width: 250px; height: 350px;
-    border-radius: 8px; margin-left: 20px;
-    border:1px solid #ccc;}
+                border-radius: 8px; margin-left: 20px;
+                border:1px solid #ccc;
+                box-shadow: 5px 5px 25px #c2c2c2;}
+.left-thum button { padding: 5px 15px; margin-top: 30px; 
+    cursor: pointer; background-color: #fff;
+    border: 1px solid #929292; border-radius: 3px;
+    box-shadow: 0 2px 1px #dddddd;}
 .right-info { width: 65%; }
-.right-info table th { padding: 8px 10px 8px 10px;
-    text-align: left;}
+
 
 .authors { display: inline-block;}
-.box table, th, td  { width:100%; border:1px solid #666;}
+.rank { height: 48px; display: flex; padding-top: 20px; }
+.rank p { margin-right: 30px;}
+.rank p:first-child { background: url(../img/rank_star_main.png) no-repeat;
+padding-left: 85px;}
+.rank p:nth-child(2) { background: url(../img/review-user.png) no-repeat;
+    padding-left: 35px;}
+.rank p:nth-child(3) { background: url(../img/share.png) no-repeat;
+    padding-left: 35px;}
+.info-box { width: 80%; padding: 20px 0;}
+.info-box th, td  {border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;}
+.info-box th { width: 20%; padding: 8px 20px;
+    text-align: left; 
+    border-left: 1px solid #eaeaea;}
+.info-box td { width: 40%; padding: 8px 0 8px 20px; }
+.info-box tbody tr:last-child th, .info-box tbody tr:last-child td { border-bottom: 1px solid #eaeaea;}
+.device p:nth-child(2) { background: url(../img/tts.png) no-repeat center left;
+    padding: 5px 25px;}
+.btn {padding: 30px 0;}
+.btn a { width: 60px; height: 60px;
+        border: 1px solid #c2c2c2; 
+        border-radius: 4px; padding: 15px 25px;
+        margin-right: 5px;}
+.btn .basket { 
+    background: url(../img/d-basket.png) no-repeat center; }
+.btn .gift { background: url(../img/d-gift.png) no-repeat center;}
+.btn .bookbuy { width: 150px; background-color: #f26532;
+    padding: 15px 45px; color: #fff; border: 1px solid #ec5b26;}
 
-.detail-navi { display: flex; width: 100%; height: 100px;}
+    /* navi */
+.detail-navi { height: 100px; margin-top: 50px; 
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;}
+.navi-box { display: flex; text-align: center;}
+.navi-box li {width: 25%; line-height: 30px; padding: 20px 0;}
+    /* 책소개 */
 #intro-box { width: 95%; height: auto; float: left; }
