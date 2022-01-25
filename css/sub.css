@@ -58,13 +58,27 @@ padding-left: 85px;}
     /* navi */
 .detail-navi { height: auto; margin-top: 50px; 
                 border-top: 1px solid #eee;
-                border-bottom: 1px solid #eee;}
+                border-bottom: 1px solid #eee; }
 .detail-navi .container {height: 100%;}
-.navi-box { display: flex; text-align: center;}
+.navi-box { display: flex; text-align: center; }
 .navi-box li {width: 25%; line-height: 30px; 
              padding: 20px 0; font-weight: 600;
              cursor: pointer;}
-.navi-box .selected { border-bottom: 3px solid #f26532;}
+.navi-box .selected { border-bottom: 4px solid #f26532;}
     /* 책소개 */
-#intro-box { width: 950px; height: 2000px;
+#intro-box { width: 950px; height: auto;
              margin: 20px auto;  }
+#intro-box h3 { padding: 20px 0;
+              border-bottom: 1px solid #000; }
+.img-wrap { max-height: 500px; overflow: hidden;
+            margin-top: 30px; padding-left: 5px; }
+.on { max-height:none; }
+.d-more a { display: block; 
+            text-align: center;
+            line-height: 36px;
+            border: 1px solid #eee;
+            border-radius: 3px;
+            box-shadow: 0 2px #f2f2f2;
+            color: #ff6633;
+            font-size: 16px;
+            font-weight: 600;}
