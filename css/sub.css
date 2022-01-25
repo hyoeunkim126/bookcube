@@ -66,5 +66,5 @@ padding-left: 85px;}
              cursor: pointer;}
 .navi-box .selected { border-bottom: 3px solid #f26532;}
     /* 책소개 */
-#intro-box { width: 950px; height: 1000px;
+#intro-box { width: 950px; height: 2000px;
              margin: 20px auto;  }
