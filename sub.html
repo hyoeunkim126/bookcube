@@ -207,21 +207,21 @@
         <h2>서평</h2>
       </div>
     </div>
-    
+    <script>
+      $(function(){
+          var tImg = $(".img-wrap img").height();
+          if(tImg < 340){
+            $(".d-more").hide();
+          }
+          $(".d-more").on("click",function(){
+            $(this).prev().addClass("on");
+            $(this).hide();
+          });	
+      });
+    </script>
     
   </div>
-  <script>
-    $(function(){
-        var tImg = $(".img-wrap img").height();
-        if(tImg < 340){
-          $(".d-more").hide();
-        }
-        $(".d-more").on("click",function(){
-          $(this).prev().addClass("on");
-          $(this).hide();
-        });	
-    });
-  </script>
+  
   <script>
      $.ajax({
               method: "GET",
