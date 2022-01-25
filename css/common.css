@@ -86,7 +86,7 @@
 .n-title { width: 10%; font-size: 12px; font-weight: bold;}
 .n-list { width: 80%; display: flex; 
 justify-content: space-between;}
-.n-list p, span { font-size: 13px; color: #a3a3a3;}
+.n-list p, .n-list span { font-size: 13px; color: #a3a3a3;}
 
 /* 고객센터 */
 .cs-wrap { height: 150px;}
