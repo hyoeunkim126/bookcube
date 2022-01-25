@@ -39,7 +39,9 @@ padding-left: 85px;}
     text-align: left; 
     border-left: 1px solid #eaeaea;}
 .info-box td { width: 40%; padding: 8px 0 8px 20px; }
-.info-box tbody tr:last-child th, .info-box tbody tr:last-child td { border-bottom: 1px solid #eaeaea;}
+.info-box tbody tr:last-child th, .info-box tbody tr:last-child td { 
+    border-bottom: 1px solid #eaeaea;}
+.device p { font-size: 14px;}
 .device p:nth-child(2) { background: url(../img/tts.png) no-repeat center left;
     padding: 5px 25px;}
 .btn {padding: 30px 0;}
@@ -50,8 +52,8 @@ padding-left: 85px;}
 .btn .basket { 
     background: url(../img/d-basket.png) no-repeat center; }
 .btn .gift { background: url(../img/d-gift.png) no-repeat center;}
-.btn .bookbuy { width: 150px; background-color: #f26532;
-    padding: 15px 45px; color: #fff; border: 1px solid #ec5b26;}
+.btn .bookbuy { background-color: #f26532;
+    padding: 15px 50px; color: #fff; border: 1px solid #ec5b26;}
 
     /* navi */
 .detail-navi { height: auto; margin-top: 50px; 
