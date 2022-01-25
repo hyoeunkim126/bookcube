@@ -60,4 +60,5 @@ padding-left: 85px;}
 .navi-box { display: flex; text-align: center;}
 .navi-box li {width: 25%; line-height: 30px; padding: 20px 0;}
     /* 책소개 */
-#intro-box { width: 95%; height: auto; float: left; }
+#intro-box { width: 950px; height: auto;
+             margin: 0 auto; float: left; }
