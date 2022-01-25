@@ -186,27 +186,30 @@
     
   </div>
   <div id="intro-box">
-    <h3>책 소개 이미지</h3>
-    <div class="img-wrap">
-      <p><img src="img/series_920007032.jpg"></p>
+    <div class="trailer">
+      <h3>책 소개 이미지</h3>
+      <div class="img-wrap">
+        <p><img src="img/series_920007032.jpg"></p>
+      </div>
+      <div class="d-more">
+        <a href="javascript:;">더보기</a>
+      </div>
     </div>
-    <div class="d-more">
-      <a href="javascript:;">더보기</a>
-    </div>
-    <script>
-      $(function(){
-          var tImg = $(".img-wrap img").height();
-          if(tImg < 340){
-            $(".d-more").hide();
-          }
-          $(".d-more").on("click",function(){
-            $(this).prev().addClass("on");
-            $(this).hide();
-          });	
-      });
-    </script>
+    
+    
   </div>
-  
+  <script>
+    $(function(){
+        var tImg = $(".img-wrap img").height();
+        if(tImg < 340){
+          $(".d-more").hide();
+        }
+        $(".d-more").on("click",function(){
+          $(this).prev().addClass("on");
+          $(this).hide();
+        });	
+    });
+  </script>
   <script>
      $.ajax({
               method: "GET",
