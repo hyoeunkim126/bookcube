@@ -71,7 +71,7 @@
 .navi-box .selected { border-bottom: 4px solid #f26532;}
     /* 책소개 */
 #intro-box { width: 950px; height: auto;
-             margin: 20px auto;  }
+             margin: 30px auto;  }
 #intro-box .trailer h3 { padding: 20px 0; color: #333;
               border-bottom: 1px solid #000; }
 .img-wrap { max-height: 500px; overflow: hidden;
