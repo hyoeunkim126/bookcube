@@ -12,4 +12,12 @@ $(function(){
             $(".top-slider").css({marginLeft:0});
         });
     });
+
+    //  책 이미지 호버하면 정보
+    $(".today-hot-box img").hover(function(){
+        $(this).find('p').stop().fadeIn();
+    },function(){
+        $(".today-hot-box p").stop().hide();
+    });
 });    
+

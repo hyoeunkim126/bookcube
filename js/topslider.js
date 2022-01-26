@@ -16,7 +16,12 @@ $.ajax({
         var str2=str.substring(0,20);
 
         $('.today-hot-box').eq(i).append('<h4>'+str2+'...'+'</h4>');
-        $('.today-hot-box').eq(i).append('<p>'+msg.documents[i].authors+'</p>');
+        $('.today-hot-box').eq(i).append('<span>'+msg.documents[i].authors+'</span>');
+
+        var str3=msg.documents[i].contents;
+        var str4=str3.substring(0,50);
+
+        $('.today-hot-box').eq(i).append("<p>"+'<a href="#">'+str4+" ···</a>"+'</p>');  
 
     }
 });
