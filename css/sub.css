@@ -1,4 +1,5 @@
 @charset "UTF-8";
+.nav-active {  border-bottom: 4px solid #f26532; }
 
 .category-inner { height: 40px; 
         background-color: #eee;
@@ -110,8 +111,8 @@
             padding: 15px 50px;}
 
 /* ebook 이용안내 */
-.ebook-ps .container { height: 350px; margin-top: 50px;
-        background-color: #eee; padding: 20px; }
+.ebook-ps .container { height: 400px; margin: 50px auto;
+        background-color: #eee; padding: 30px; }
 .ebook-ps h3 {font-size: 18px; margin-bottom: 15px;}
 .ebook-ps ul li { 
         font-size: 15px; color: #666;
