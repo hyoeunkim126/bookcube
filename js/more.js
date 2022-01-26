@@ -2,9 +2,9 @@
 $(function(){
   var tImg = $(".img-wrap img").height();
   if(tImg < 340){
-    $(".d-more").hide();
+    $(".i-more").hide();
   }
-  $(".d-more").on("click",function(){
+  $(".i-more").on("click",function(){
     $(this).prev().addClass("on");
     $(this).hide();
   });	
@@ -12,9 +12,9 @@ $(function(){
 $(function(){
   var tText = $(".t-content").height();
   if(tText < 150){
-    $(".d-more").hide();
+    $(".t-more").hide();
   }
-  $(".d-more").on("click",function(){
+  $(".t-more").on("click",function(){
     $(this).prev().addClass("on");
     $(this).hide();
   });	

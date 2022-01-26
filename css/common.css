@@ -47,10 +47,12 @@
  /* header bottom */
  .header-bottom { width: 100%; height: 45px; 
    border-top: 1.5px solid #e7e7e7; 
-   border-bottom: 1.5px solid #e7e7e7; padding-top: 12px;}
+   border-bottom: 1.5px solid #e7e7e7; padding-top: 9px;}
  
  .left-m2 { width: 470px;  }
  .all-category, .left-m2:first-child { cursor: pointer;}  
+ .all-category img { vertical-align: middle; padding: 0 5px;}
+ .right-m2 { padding-top: 5px;}
  .left-m2 li { font-family: 'pretendard-bold'; font-weight: bold ;
                color: #929292; margin-right: 15px;}                        
  .right-m2 li { font-family: 'pretendard-bold'; color: #333; font-weight: bold ;
