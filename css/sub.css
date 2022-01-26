@@ -1,5 +1,6 @@
 @charset "UTF-8";
-.nav-active {  border-bottom: 4px solid #f26532; }
+
+.nav-active {  border-bottom: 4px solid #f26532; }/* 중간 네비 활성화 주황색 선  */
 
 .category-inner { height: 40px; 
         background-color: #eee;
@@ -12,6 +13,8 @@
 .book-info { display: flex; flex-direction: row;
             justify-content: space-between;
             margin-top: 30px;}
+
+/* 왼쪽 사진  */
 .left-thum { display: flex; flex-direction: column; align-items: center;}
 .left-thum img { width: 250px; height: 350px;
                 border-radius: 8px; margin-left: 20px;
@@ -21,9 +24,9 @@
         cursor: pointer; background-color: #fff;
         border: 1px solid #929292; border-radius: 3px;
         box-shadow: 0 2px 1px #dddddd;}
+
+/* 오른쪽 작가 가격정보 */
 .right-info { width: 65%; }
-
-
 .authors { display: inline-block;}
 .rank { height: 48px; display: flex; padding-top: 20px; }
 .rank p { margin-right: 30px;}
@@ -57,7 +60,7 @@
         padding: 15px 50px; color: #fff; 
         border: 1px solid #ec5b26;}
 
-    /* navi */
+/* 중간 네비 */
 .detail-navi { height: auto; margin-top: 50px; 
                 border-top: 1px solid #eee;
                 border-bottom: 1px solid #eee;
@@ -69,14 +72,15 @@
              padding: 20px 0; font-weight: 600;
              cursor: pointer;}
 .navi-box .selected { border-bottom: 4px solid #f26532;}
-    /* 책소개 */
+
+/* 책소개 */
 #intro-box { width: 950px; height: auto;
              margin: 30px auto;  }
 #intro-box .trailer h3 { padding: 20px 0; color: #333;
               border-bottom: 1px solid #000; }
 .img-wrap { max-height: 500px; overflow: hidden;
             margin-top: 30px; padding-left: 5px; }
-.on { max-height:none; }
+.on { max-height:none; } 
 .d-more a { display: block; 
             text-align: center;
             line-height: 36px;
