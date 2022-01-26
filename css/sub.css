@@ -123,8 +123,20 @@
         text-align:center;
         line-height:42px; height:42px;
         width:149px; font-size:16px; border-right:1px solid #cdced3;font-weight:600;
- border-bottom:none; background:#fff; color:#333; }
-
+        border-bottom:none; background:#fff; color:#333; }
+.tab-top { padding-top: 30px; display: flex;
+        justify-content: space-between;}
+.review-score {width: 175px;}
+.review-score span{ display: inline-block; width: 230px; 
+        height:16px; padding:0 50px 0 100px; line-height: 20px;
+        background: url(../img/rank_star_main2.png) no-repeat 0% 0% transparent;  }
+.good-new { padding-left: 10px;}
+.good-new span { width: 200px; margin: 20px; cursor: pointer;}
+.orange-check { background: url(../img/radio_on.png) no-repeat left;
+padding-left: 20px; color:#ec5b26 ; font-weight: 600;}
+.comment-list {text-align: center; padding: 100px 0; 
+                border-bottom: 1px solid #eee; 
+                font-weight: 600; color: #8a93a1;}
 
 /* ebook 이용안내 */
 .ebook-ps .container { height: 400px; margin: 50px auto;

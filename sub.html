@@ -197,9 +197,7 @@
     <div class="trailer-bottom">
       <div class="t-bookintro textfile"></div>
       <div class="t-content textfile">
-        <div class="t-more">
-          <a>더보기</a>
-        </div>
+        
       </div>
       <div class="t-authotrs textfile"></div>
       <div class="t-review" id="bookreview">
@@ -215,8 +213,26 @@
       <ul>
         <li><a class="on">전체</a></li>
       </ul>
+      <div class="tab-top">
+        <div class="good-new" >
+          <span class="good">좋아요순</span>
+          <span class="new orange-check">최신순</span>
+        </div>
+        <div class="review-score">
+          <span><strong>0.0</strong>(0명)</span>
+        </div>
+      </div>
+      <div class="comment-list">
+        <p>회원님께서 첫 서평의 주인공이 되어주세요.</p>
+      </div>
+      
     </div>
-    
+    <script>
+      $(".good-new span").click(function(){
+        $(this).addClass("orange-check");
+        $(this).siblings().removeClass("orange-check");
+      });
+    </script>
   </div>
    <!-- ebook 이용안내 -->
   <div>
